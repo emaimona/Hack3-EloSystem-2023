@@ -3,8 +3,6 @@ import TeamMateFinder from './content_components/TeamMateFinder'
 
 export default function Content() {
     return (
-       <>
-            <TeamMateFinder />
-       </>
+        <TeamMateFinder />
     )
 }

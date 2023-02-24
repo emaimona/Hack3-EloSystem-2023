@@ -11,6 +11,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -71,11 +72,10 @@ main {
 }
 
 .container {
-    margin: 0 !important;
+    width: 100%;
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 1fr;
-    width: 100vw;
+    grid-template-columns: 30% auto;
+
 }
 
 .sidebar {
@@ -90,13 +90,14 @@ main {
   list-style-type: none;
   margin-left: 10px;
 }
+
 .teamMateFinder{
     width:80vw;
     height:30vh;
-    border: 1px solid green;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-left:-10vw;
     
 }
 .teamMate{
@@ -109,19 +110,25 @@ main {
     flex-direction:column;
 }
 .topPart{
-    border-bottom:4p solid var(--color-aside);
+    border-bottom:4px solid var(--color-aside);
 }
 .topPart,.bottomPart{
     height:10vh;
     width: calc(70vw - 20px);
-    border:1px solid green;
 }
 .topPart{
-    display:flex;
-    align-items:center;
-    position:relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
 }
 
+.buttons {
+    display:flex;
+    width:fit-content;
+    height:100%;
+    align-items:center;
+}
 .invite, .more{
     width: fit-content;
     height:20px;
@@ -132,19 +139,19 @@ main {
     margin:7px;
     background-color: var(--color-btn-profile);
     border:none;
-    justify-self: flex-end;
 }
 
 .topPart img{
     position:absolute;
     left:20px;
     display:flex;
+    padding-right:10px;
 }
 
 .faceAndFlag{
     height:100%;
-    width:40%;
-    border:1px solid blue;
+    width:30%;
     position:relative;
     justify-self:flex-start;
+    text-align:center;
 }

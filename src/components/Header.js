@@ -8,7 +8,7 @@ export default function Header() {
       </div>
       <div className="header--aside">
         <div className="header--search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i className="fa-solid fa-magnifying-glass"></i>
             <input
                 type="text"
                 className=""

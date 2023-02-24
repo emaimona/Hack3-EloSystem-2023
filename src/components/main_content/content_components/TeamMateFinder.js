@@ -12,9 +12,13 @@ export default function TeamMateFinder() {
               src="./assets/images/random_photo.png"
               alt="logo"
             ></img>
+            <p>Collins</p>
+
           </div>
-          <button className="invite">invite to team</button>
-          <button className="more">show more</button>
+          <div className="buttons">
+            <button className="invite">invite to team</button>
+            <button className="more">show more</button>
+          </div>
         </div>
         <div className="bottomPart"></div>
       </div>
