@@ -4,9 +4,9 @@ import SideBar from './main_content/SideBar'
 
 export default function Main() {
     return (
-        <main>
-            <Content />
+        <main className='container'>
             <SideBar />
+            <Content />
         </main>
     )
 }

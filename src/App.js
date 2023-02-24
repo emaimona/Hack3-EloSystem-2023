@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
-import Footer from './components/Footer'
+//import Footer from './components/Footer'
 import './style.css'
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
         <>
             <Header/>
             <Main/>
-            <Footer/>
         </>
+        
     )
 }

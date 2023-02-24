@@ -4,6 +4,7 @@
   --color-bg: #262338;
   --color-main: #1e1c2b;
   --color-aside: #8284aa;
+  --color-btn-profile: #C4C2CF;
 }
 
 * {
@@ -15,6 +16,10 @@
 body {
   background-color: var(--color-bg);
   color: white;
+}
+
+#root {
+    height: 100vh;
 }
 
 .header {
@@ -62,8 +67,15 @@ body {
 
 
 main {
-  background-color: var(--color-main);
-  height: 100vh;
+    background-color: var(--color-main);
+}
+
+.container {
+    margin: 0 !important;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    width: 100vw;
 }
 
 .sidebar {
@@ -107,9 +119,10 @@ main {
 .topPart{
     display:flex;
     align-items:center;
-    justify-content:flex-end;
+    position:relative;
 }
-.invite,.more{
+
+.invite, .more{
     width: fit-content;
     height:20px;
     padding:15px;
@@ -117,5 +130,21 @@ main {
     align-items:center;
     border-radius:6px;
     margin:7px;
-    background-color: var(--color-aside);
+    background-color: var(--color-btn-profile);
+    border:none;
+    justify-self: flex-end;
+}
+
+.topPart img{
+    position:absolute;
+    left:20px;
+    display:flex;
+}
+
+.faceAndFlag{
+    height:100%;
+    width:40%;
+    border:1px solid blue;
+    position:relative;
+    justify-self:flex-start;
 }
