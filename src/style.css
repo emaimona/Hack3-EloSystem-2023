@@ -1,46 +1,121 @@
 /* Variables*/
 
 :root {
-    --color-bg: #262338;
-    --color-main: #1E1C2B;
-    --color-aside: #8284AA;
+  --color-bg: #262338;
+  --color-main: #1e1c2b;
+  --color-aside: #8284aa;
 }
 
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: var(--color-bg);
-    color: white;
+  background-color: var(--color-bg);
+  color: white;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
 }
+
+.header--search {
+  background-color: var(--color-main);
+  border-radius: 12px;
+}
+
+.header--search  input {
+  background-color: var(--color-main);
+  color: white;
+  border: none;
+  outline: none;
+  width: 17rem;
+}
+
+.header--search  input::placeholder {
+    font-size: .8rem;
+  }
+  
+
+.header--search  i {
+    font-size: .7rem;
+    padding: 12px;
+}
+
+.header--aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+
+}
+
+.header--aside img {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
 
 main {
-    background-color: var(--color-main);
-    height: 100vh;
+  background-color: var(--color-main);
+  height: 100vh;
 }
 
 .sidebar {
-    background-color: var(--color-bg);
-    width: 20vw;
-    height: 100vh;
-    border-top: 1px solid var(--color-aside);
-    padding-top: 30px;
-    text-align: center;
-    
+  background-color: var(--color-bg);
+  width: 20vw;
+  height: 100vh;
+  border-top: 1px solid var(--color-aside);
+  padding-top: 30px;
 }
 
-.sidebar ul li{
-    list-style-type: none;
+.sidebar ul li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+.teamMateFinder{
+    width:80vw;
+    height:30vh;
+    border: 1px solid green;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.teamMate{
+    width:70vw;
+    height:20vh;
+    border:1px solid var(--color-aside);
+    border-radius:10px;
+    border-left:20px solid var(--color-aside);
+    display:flex;
+    flex-direction:column;
+}
+.topPart{
+    border-bottom:4p solid var(--color-aside);
+}
+.topPart,.bottomPart{
+    height:10vh;
+    width: calc(70vw - 20px);
+    border:1px solid green;
+}
+.topPart{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+.invite,.more{
+    width: fit-content;
+    height:20px;
+    padding:15px;
+    display:flex;
+    align-items:center;
+    border-radius:6px;
+    margin:7px;
+    background-color: var(--color-aside);
 }
