@@ -8,25 +8,25 @@ export default function SideBar() {
   return (
     <nav className="sidebar">
       <ul>
-        <li className="x">
+        <li className="" onClick={toggle}>
             <i className="fa-solid fa-table"></i> Dashboard
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="" onClick={toggle}>
           <i className="fa-solid fa-bolt"></i> Tournaments
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="sidebar-focus"  onClick={toggle}>
           <i className="fa-solid fa-trophy"></i> Leaderboard
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="" onClick={toggle}>
           <i className="fa-solid fa-users"></i> Team finder
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="" onClick={toggle}>
           <i className="fa-brands fa-fantasy-flight-games"></i> Challenges
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="" onClick={toggle}>
           <i className="fa-regular fa-building"></i> Organizations
         </li>
-        <li className="x" onClick={toggle}>
+        <li className="" onClick={toggle}>
           <i className="fa-regular fa-newspaper"></i> News
         </li>
       </ul>

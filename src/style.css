@@ -92,7 +92,7 @@ main {
 }
 
 .sidebar-focus {
-    background-color: #8284aa;
+    background-color: var(--color-btn-hover);
 }
 
 
@@ -151,7 +151,11 @@ main {
 }
 
 .teamMateFinder {
-    margin: 30px;
+    margin: 25px 25px 0px 25px;
+}
+
+.content .teamMateFinder:last-of-type {
+    margin-bottom: 25px;
 }
 
 .teamMate {
