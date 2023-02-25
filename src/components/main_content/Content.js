@@ -3,6 +3,16 @@ import TeamMateFinder from './content_components/TeamMateFinder'
 
 export default function Content() {
     return (
-        <TeamMateFinder />
+        <div className='content'>
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+            <TeamMateFinder />
+        </div>
+        
     )
 }

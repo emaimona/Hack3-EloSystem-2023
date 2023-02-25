@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-main);
   color: white;
 }
 
@@ -25,10 +25,16 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-bg);
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
 .header--search {
@@ -73,34 +79,37 @@ main {
 }
 
 .container {
+    height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: 15% auto;
 }
 
 .sidebar {
-  background-color: var(--color-bg);
-  height: 100vh;
-  border-top: 1px solid var(--color-aside);
-  padding-top: 30px;
+    position: fixed;
+    background-color: var(--color-bg);
+    height: 100vh;
+    border-top: .8px solid var(--color-aside);
+    padding-top: 40px;
 }
 
 .sidebar-focus {
     background-color: #8284aa;
 }
 
-.sidebar ul li:hover {
-    background-color: var(--color-btn-hover);
-}
 
 .sidebar ul {
+    box-sizing: border-box;
     margin-left: 15px;
 }
 
 .sidebar ul li {
     padding: 7px;
     margin-right: 17px;
+    margin-top: 15px;
     list-style-type: none;
+}
+
+.sidebar li:hover {
+    background-color: var(--color-aside);
 }
 
 .sidebar ul li:nth-child(1) i {
@@ -133,34 +142,32 @@ main {
 }
 
 
-.sidebar ul li {
-    margin-top: 15px;
-    list-style-type: none;
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 180px;
 }
 
-.teamMateFinder{
-    height:30vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-left:-10vw;
-    
+.teamMateFinder {
+    margin: 30px;
 }
-.teamMate{
-    width:70vw;
+
+.teamMate {
     height:20vh;
-    border:1px solid var(--color-aside);
     border-radius:10px;
-    border-left:20px solid var(--color-aside);
-    display:flex;
-    flex-direction:column;
+    border-left: 25px solid var(--color-aside);
+    background-color: var(--color-bg);
 }
+
 .topPart{
-    border-bottom:4px solid var(--color-aside);
+    width: 100%;
+    border-bottom: 1px solid var(--color-aside);
 }
-.topPart,.bottomPart{
-    height:10vh;
-    width: calc(70vw - 20px);
+.topPart, .bottomPart{
+    height: 10vh;
+   
 }
 .topPart{
     display: flex;
@@ -202,20 +209,22 @@ main {
     text-align:center;
 }
 
+.bottomPart{
+    display: flex;
+    justify-content: space-between;
+}
+
 .roles,.summoner{
     width: 25%;
 }
 .div3{
-    
-    width:50%;
+    align-self: flex-end;
+    width:30%;
 }
 .roles,.summon,.div3{
     height:100%;
 }
-.bottomPart{
-    display:flex;
 
-}
 .fa-medal{
     font-size:2em;
 
@@ -223,7 +232,6 @@ main {
 .summon{
     display:flex;
     flex-direction:column;
-
 }
 .bottom{
     display:flex;
@@ -236,4 +244,35 @@ main {
     display:flex;
     flex-direction:column; 
     font-size:13px; 
+}
+.div3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+.topStats,.progressBar{
+    width:100%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.progressBar--inner{
+    width:70%;
+    height: 20px;
+    background-color: #385682;
+    border-radius: 7px;
+}
+.progressBar--inner2{
+    width:30%;
+    height: 100%;
+    background-color: #5297FF;
+    border-radius: 7px;
+}
+.line{
+    font-family: 'Flamenco', cursive;
+    font-size: 9px;
 }
