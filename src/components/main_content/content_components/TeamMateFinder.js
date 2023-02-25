@@ -20,7 +20,32 @@ export default function TeamMateFinder() {
             <button className="more">show more</button>
           </div>
         </div>
-        <div className="bottomPart"></div>
+        <div className="bottomPart">
+            <div className="roles">
+                <h4>Roles</h4>
+                <i className="fa-solid fa-bullseye"></i>
+                <i className="fa-solid fa-user-ninja"></i>
+                <i className="fa-brands fa-old-republic"></i>
+            </div>
+            <div className="summon">
+                <div className="summoner">
+                    <h4>Summoner</h4>
+                </div>    
+                <div className="bottom">
+                    <i className="fa-solid fa-medal"></i>
+                    <div className="infoo">
+                        <p>Golden boy</p>
+                        <p>Latin america</p>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+            <div className="div3">
+            </div>
+        </div>
       </div>
     </div>
   );

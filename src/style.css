@@ -5,6 +5,7 @@
   --color-main: #1e1c2b;
   --color-aside: #8284aa;
   --color-btn-profile: #C4C2CF;
+  --color-btn-hover: #3B394B;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .header--search {
@@ -74,25 +75,70 @@ main {
 .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 30% auto;
-
+    grid-template-columns: 15% auto;
 }
 
 .sidebar {
   background-color: var(--color-bg);
-  width: 20vw;
   height: 100vh;
   border-top: 1px solid var(--color-aside);
   padding-top: 30px;
 }
 
+.sidebar-focus {
+    background-color: #8284aa;
+}
+
+.sidebar ul li:hover {
+    background-color: var(--color-btn-hover);
+}
+
+.sidebar ul {
+    margin-left: 15px;
+}
+
 .sidebar ul li {
-  list-style-type: none;
-  margin-left: 10px;
+    padding: 7px;
+    margin-right: 17px;
+    list-style-type: none;
+}
+
+.sidebar ul li:nth-child(1) i {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.sidebar ul li:nth-child(2) i {
+    margin-left: 6px;
+    margin-right: 10px;
+}
+.sidebar ul li:nth-child(3) i {
+    margin-left: 4px;
+    margin-right: 3px;
+}
+.sidebar ul li:nth-child(4) i {
+    margin-left: 3px;
+    margin-right: 1px;
+}
+.sidebar ul li:nth-child(5) i {
+    margin-left: 6px;
+    margin-right: 4px;
+}
+.sidebar ul li:nth-child(6) i {
+    margin-left: 8px;
+    margin-right: 7px;
+}
+.sidebar ul li:nth-child(7) i {
+    margin-left: 7px;
+    margin-right: 6px;
+}
+
+
+.sidebar ul li {
+    margin-top: 15px;
+    list-style-type: none;
 }
 
 .teamMateFinder{
-    width:80vw;
     height:30vh;
     display:flex;
     align-items:center;
@@ -145,7 +191,7 @@ main {
     position:absolute;
     left:20px;
     display:flex;
-    padding-right:10px;
+    padding-right:20px;
 }
 
 .faceAndFlag{
@@ -154,4 +200,40 @@ main {
     position:relative;
     justify-self:flex-start;
     text-align:center;
+}
+
+.roles,.summoner{
+    width: 25%;
+}
+.div3{
+    
+    width:50%;
+}
+.roles,.summon,.div3{
+    height:100%;
+}
+.bottomPart{
+    display:flex;
+
+}
+.fa-medal{
+    font-size:2em;
+
+}
+.summon{
+    display:flex;
+    flex-direction:column;
+
+}
+.bottom{
+    display:flex;
+    height:50%;
+}
+.bottom i{
+    padding:5px;
+}
+.infoo{
+    display:flex;
+    flex-direction:column; 
+    font-size:13px; 
 }
