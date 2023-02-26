@@ -75,7 +75,7 @@ export default function Play({ show, setShow }) {
             </div>
           </div>
           <div className="bottomPop">
-            <button className="btn-Play">Play</button>
+            <button className="btn-Play">Play </button>
           </div>
         </div>
       </div>
