@@ -1,0 +1,64 @@
+{
+  "_id": {
+    "$oid": "63cd6cc5cb7e63f6225eebfe"
+  },
+  "createdAt": 1674407109812,
+  "status": "finished",
+  "challengeId": "63cd6c9dcb7e63f6225eebed",
+  "statusReason": null,
+  "amount": 0,
+  "prize": 25,
+  "challenged": {
+    "id": "63cd69c4340e32a6e1058f46",
+    "name": "isolated",
+    "lineup": [
+      {
+        "username": "isolated",
+        "joinedAt": "2023-01-22T16:52:20+00:00",
+        "profileImage": "",
+        "status": "leader",
+        "gameAccounts": [
+          {
+            "game": "csgo",
+            "accountId": "76561197971861636"
+          }
+        ]
+      }
+    ],
+    "score": 16
+  },
+  "challenger": {
+    "id": "63c59f6d4130b97766070378",
+    "name": "maja",
+    "lineup": [
+      {
+        "username": "maja",
+        "joinedAt": "2023-01-16T19:03:09+00:00",
+        "profileImage": "esm_1673896109139_user_profile_maja.png",
+        "status": "leader",
+        "gameAccounts": [
+          {
+            "game": "csgo",
+            "accountId": "76561198248838742"
+          }
+        ]
+      }
+    ],
+    "score": 9
+  },
+  "winner": "isolated",
+  "game": "csgo",
+  "map": "aim_map",
+  "teamSize": 1,
+  "startDate": 1674407070236,
+  "resultHandle": "automatic",
+  "public": true,
+  "csgo": {
+    "connectionString": "connect will.dathost.net:27263; password esm",
+    "steamProtocolConnectionString": "steam://connect/will.dathost.net:27263/esm",
+    "dathostMatchId": "63cd6cf8d29d26bb8a6f31df"
+  },
+  "resultApprovers": [],
+  "__v": 0,
+  "serverStartDate": 1674407167679
+}
