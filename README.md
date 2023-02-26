@@ -32,10 +32,10 @@ Usage
 
 ## Screenshots
 
-![Leaderboard](screenshots/leader_board.png)
+![Player Profile](screenshots/player_profile.png)
 ![Team finder](screenshots/team_finder.png)
 ![Players Enemies](screenshots/players_enemies.png)
-![Player Profile](screenshots/player_profile.png)
+![Leaderboard](screenshots/leader_board.png)
 
 ## License
 
