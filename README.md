@@ -7,7 +7,7 @@ The aim is to develop a Leaderboard Elo system and a teammate/enemy finder based
 
 ## Table of contents
 
-> * [Title / Repository Name](#elo-system--h&h-hack3-2023)
+> * [Elo System - K&H HACK3 2023](#elo-system--h&h-hack3-2023)
 >   * [Synopsis](#synopsis)
 >   * [Table of contents](#table-of-contents)
 >   * [Installation](#installation)
