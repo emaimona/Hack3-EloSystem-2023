@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MatesFinder() {
   return (
-    <div className="teamMateFinder">
+    <div className="teamMateFinder mateFinder">
       <div className="teamMate">
         <div className="topPart">
           <div className="faceAndFlag">
@@ -12,7 +12,7 @@ export default function MatesFinder() {
               src="./assets/images/random_photo.png"
               alt="logo"
             ></img>
-            <p>Collins</p>
+            <div>gameHunter</div>
           </div>
           <div className="buttons">
             <button className="invite">invite to team</button>

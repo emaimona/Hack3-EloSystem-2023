@@ -3,6 +3,7 @@ import React from "react";
 export default function Profile() {
   let miniStyle = {
     color: "#CE4444",
+    fontWeight:"300"
   };
   let miniStyle2 = {
     color: "#A6763F",
@@ -14,7 +15,7 @@ export default function Profile() {
         <div className="div1-1">
           <p> Player profile</p>
           <div className="group">
-            <div className="group-1">
+            <div className="roup-1">
               <img
                 className="img--profile"
                 src="./assets/images/random_photo.png"

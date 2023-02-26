@@ -1,8 +1,15 @@
 import React from 'react'
 import {nanoid} from 'nanoid'
-import TeamMateFinder from './content_components/TeamMateFinder'
+// import TeamMateFinder from './content_components/TeamMateFinder'
+import InvitedMates from './content_components/InvitedMates'
 import LeaderBoard from './content_components/LeaderBoard'
 import Profile from './content_components/Profile'
+import MatesFinder from './content_components/MatesFinder'
+import Play from './content_components/Play'
+
+
+
+console.log('')
 
 /*
     Leaderboard ==> 1
@@ -10,10 +17,12 @@ import Profile from './content_components/Profile'
     Profile ==> 3
 */
 export default function Content({formId}) {
+    const[show, setShow] = React.useState(true)
+
     function generateTeamMateFinder(nbr) {
         let comp = []
         for (let i=0; i<nbr; i++)
-            comp.push(<TeamMateFinder key={nanoid()}/>)
+            comp.push(<MatesFinder key={nanoid()}/>)
 
         return comp
     }
@@ -21,8 +30,8 @@ export default function Content({formId}) {
     
     return (
         <div className='content'>
-            {component}
+            {   (formId!==2) ? component : <> <InvitedMates show={show} setShow={setShow}/> {component}</> }
+        <Play show={show} setShow={setShow}/>
         </div>
-        
     )
 }

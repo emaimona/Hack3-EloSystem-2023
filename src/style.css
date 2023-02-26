@@ -151,6 +151,84 @@ main {
   margin-left: 180px;
 }
 
+.mateFinder {
+  width: 57vw;
+}
+
+.invitedMate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 20px 0px 0px;
+  background-color: var(--color-bg);
+  position: fixed;
+  right: 0;
+  width: 25vw;
+  height: 63vh;
+  border-radius: 22px;
+}
+
+.invitedMate h2 {
+  margin-top: 6px;
+  font-weight: 600;
+  color: var(--color-aside);
+  border-bottom: 1px solid var(--color-aside);
+  width: 100%;
+  text-align: center;
+}
+
+.mate {
+  margin: 13px;
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mate .left {
+  display: flex;
+  align-self: flex-end;
+}
+
+.mate .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mate .progressBar {
+  height: 8px;
+}
+
+.invitedMate--btn {
+  align-self: end;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  background-color: var(--color-main);
+}
+
+.invitedMate--btn button {
+  align-self: center;
+  height: 40px;
+  width: 120px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.btn-play {
+  color: var(--color-btn-profile);
+  background-color: #50125A;
+  border: 2px solid #E812EC;
+}
+
+.btn-remove {
+  background-color: var(--color-btn-profile);
+  border: none;
+  outline: none;
+}
+
 .teamMateFinder {
   margin: 25px 25px 0px 25px;
 }
@@ -166,10 +244,6 @@ main {
   background-color: var(--color-bg);
 }
 
-.topPart {
-  width: 100%;
-  border-bottom: 1px solid var(--color-aside);
-}
 .topPart,
 .bottomPart {
   height: 10vh;
@@ -179,6 +253,8 @@ main {
   align-items: center;
   position: relative;
   justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--color-aside);
 }
 
 .buttons {
@@ -207,12 +283,23 @@ main {
   padding-right: 20px;
 }
 
+.topPart button {
+  cursor: pointer;
+}
+
 .faceAndFlag {
   height: 100%;
   width: 30%;
   position: relative;
   justify-self: flex-start;
-  text-align: center;
+
+  margin-top: 20px;
+}
+
+.faceAndFlag div {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 13px 0 0 80px
 }
 
 .bottomPart {
@@ -222,6 +309,7 @@ main {
 
 .roles,
 .summoner {
+  margin: 10px 0 0 20px;
   width: 25%;
 }
 .div3 {
@@ -678,4 +766,129 @@ table tr:nth-child(even){
     display: inline-block;
     width: 10vw;
     margin: auto;
+}
+
+/*===================== Play Container ========================== */
+
+.show {
+  display: none;
+}
+
+.container--play {
+  width:70vh;
+}
+.popUp{
+  width:50%;
+  height:70%;
+  border-radius: 10px;
+  display: flex;
+  height:60vh;
+  margin-bottom: 10vh;
+  background-color: rgba(130, 132, 170, 0.83);
+}
+.players,.enemies{
+  width:50%;
+  height:100%;
+}
+.players{
+  display: flex;
+  flex-direction: column;
+}
+.playersTxt{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.randomImages{
+  height: 40%;
+  width: 100%;
+  position: relative;
+}
+.bottomPop{
+  height: 40%;
+  width: 100%;
+  position: relative;
+}
+.smallPbar{
+  width: 152px;
+  height: 10px;
+  background-color: #385682;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.smallPbar2{
+  width:70%;
+  height: 100%;
+  background-color: #C39215;
+}
+.randomImg1{
+  position: absolute;
+  left:40%;
+  top: 5%;
+}
+.randomImg2{
+  position: absolute;
+  left:20%;
+  transform: scale(1.5);
+  top:35%;
+}
+.randomImg3{
+  position: absolute;
+  left:40%;
+  top:60%;
+}
+.btn-1{
+    
+  width: 150.66px;
+  height: 40px;
+  background-color: #BF4246;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  border: none;
+  border-radius: 5px;
+}
+.randomImg4{
+  position: absolute;
+  left:40%;
+}
+.randomImg5{
+  position: absolute;
+  right:20%;
+  top:35% ;
+  
+  transform: scale(1.5);
+}
+.randomImg6{
+  position: absolute;
+  left:40%;
+  top: 60%;
+}
+.btn-Play{
+   
+  width: 150.66px;
+  height: 40px;
+  background-color: #50125A;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  border: none;
+  border-radius: 5px;
+}
+.flashimg{
+  z-index:2;
+  position: absolute;
+  left: 0%;
+
+}
+.flash-btn{
+  z-index: 1;
+  position: relative;
+  top:29%;
 }
