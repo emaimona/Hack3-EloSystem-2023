@@ -12,6 +12,7 @@ The aim is to develop a Leaderboard Elo system and a teammate/enemy finder based
 >   * [Table of contents](#table-of-contents)
 >   * [Installation](#installation)
 >   * [Usage](#usage)
+>     * [Demo prototype](#demo-prototype)
 >     * [Screenshots](#screenshots)
 >     * [Features](#features)
 >     * [Content](#content)
@@ -28,6 +29,13 @@ Usage
 ## Demo Prototype
 
 ![Demo](screenshots/hackathon_demo.gif)
+
+## Screenshots
+
+![Leaderboard](screenshots/leader_board.png)
+![Team finder](screenshots/team_finder.png)
+![Players Enemies](screenshots/players_enemies.png)
+![Player Profile](screenshots/player_profile.png)
 
 ## License
 
