@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({setFormId}) {
   return (
     <header className="header">
       <div className="logo">
@@ -16,8 +16,8 @@ export default function Header() {
                 aria-label="Username"
             />
         </div>
-            <img className='img--profile' src="./assets/images/random_photo.png" alt="logo"></img>
-            <h5> Collins </h5>
+            <img onClick={() => setFormId(3)} className='img--profile' src="./assets/images/random_photo.png" alt="logo"></img>
+            <h5 onClick={() => setFormId(3)}> Collins </h5>
       </div>
     </header>
   );

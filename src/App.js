@@ -6,12 +6,13 @@ import SideBar from './components/main_content/SideBar'
 import './style.css'
 
 export default function App() {
-    
+    const [formId, setFormId] = React.useState(1)
+
     return (
         <div className='container'>
-            <Header/>
-            <SideBar />
-            <Content />
+            <Header setFormId={setFormId} />
+            <SideBar setFormId={setFormId} formId={formId} />
+            <Content formId={formId} setFormId={setFormId} />
         </div>
         
     )
