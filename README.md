@@ -48,8 +48,7 @@ Sample:
 
 ### Screenshots
 
-![](https://github.com/emaimona/Hack3-EloSystem-2023/screenshots/hackathon_demo.gif)
-
+![Demo](screenshots/hackathon_demo.gif)
 
 ### Features
 
