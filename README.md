@@ -1,6 +1,6 @@
 # Elo System - K&H HACK3 2023
 
-## About / Synopsis
+## Synopsis
 This project was prepared to solve the third challenge of "K&H Hack3" Hackathon " https://hack3.crafthub.events/Metaplayers%20challenge_1_K&H%20HACK3%20hackathon.pdf "
 
 The aim is to develop a Leaderboard Elo system and a teammate/enemy finder based on in-game roles and performance.
@@ -19,8 +19,8 @@ See real examples:
 
 Use for instance <https://github.com/ekalinin/github-markdown-toc>:
 
-> * [Title / Repository Name](#title--repository-name)
->   * [About / Synopsis](#about--synopsis)
+> * [Title / Repository Name](#elo-system--h&h-hack3-2023)
+>   * [Synopsis](#synopsis)
 >   * [Table of contents](#table-of-contents)
 >   * [Installation](#installation)
 >   * [Usage](#usage)
@@ -47,6 +47,9 @@ Sample:
 ## Usage
 
 ### Screenshots
+
+![](https://github.com/emaimona/Hack3-EloSystem-2023/screenshots/hackathon_demo.gif)
+
 
 ### Features
 
