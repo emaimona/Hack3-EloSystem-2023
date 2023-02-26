@@ -1,4 +1,4 @@
-export default {
+{
   "_id": {
     "$oid": "63b9538efc23a77a810ae8d3"
   },

@@ -1,9 +1,9 @@
 // import React from 'react'
 
-export function topLaneTank(won, K, D, A, damageTaken,damageHealed, turretKills, inhibitorKills, damageToTurrets, csPerMinute, visionScore, crowdControlScore, damageDone) {
-    const totalScore = won * 100 + K/D/A * 20 + damageTaken * 0.15 + damageHealed * 0.2 + turretKills * 5 + inhibitorKills * 10 + csPerMinute * 3 + visionScore * 0.1 + crowdControlScore * 0.1 + damageDone * 0.02
-    return totalScore
-}
+// export function topLaneTank(won, K, D, A, damageTaken,damageHealed, turretKills, inhibitorKills, damageToTurrets, csPerMinute, visionScore, crowdControlScore, damageDone) {
+//     const totalScore = won * 100 + K/D/A * 20 + damageTaken * 0.15 + damageHealed * 0.2 + turretKills * 5 + inhibitorKills * 10 + csPerMinute * 3 + visionScore * 0.1 + crowdControlScore * 0.1 + damageDone * 0.02
+//     return totalScore
+// }
 
 
 
