@@ -25,6 +25,8 @@ The aim is to develop a Leaderboard Elo system and a teammate/enemy finder based
 Usage
 ========
 
+## Demo Prototype
+
 ![Demo](screenshots/hackathon_demo.gif)
 
 ## License
