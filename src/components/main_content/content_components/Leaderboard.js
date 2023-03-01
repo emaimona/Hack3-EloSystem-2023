@@ -1,10 +1,7 @@
 import React from "react";
 import User from './User'
-// import data from '../../../data/lolMatch.json';
+
 function LeaderBoard() {
-
-
-
 
   return (
     <div className="leaderBoard">
